@@ -17,17 +17,19 @@ section{
 }
 
 .textimg{
-    border : 1px solid  var(--color-principal);
+    border : 2px solid  var(--color-principal);
+    width: 30vw;
     
 }
 .titreimg{
 
-    border : 1px solid  var(--color-secondaire);
+    border : 2px solid  var(--color-secondaire);
+    width: 15vw;
 
 }
 
 .texteven{
 
-    border : 1px solid  var(--color-principal);
+    border : 2px solid  var(--color-principal);
 
 }
