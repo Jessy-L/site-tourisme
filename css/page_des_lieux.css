@@ -1,0 +1,33 @@
+:root{
+
+    --color-de-base   : #FFFFFF;
+    --color-back      : #242325;
+    --color-principal : #00ACE5;
+    --color-secondaire: #BF1867;
+
+}
+*{
+    margin: auto;
+}
+
+section{
+
+    text-align: center;
+    background-color : var(--color-back);
+}
+
+.textimg{
+    border : 1px solid  var(--color-principal);
+    
+}
+.titreimg{
+
+    border : 1px solid  var(--color-secondaire);
+
+}
+
+.texteven{
+
+    border : 1px solid  var(--color-principal);
+
+}
