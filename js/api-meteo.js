@@ -23,35 +23,26 @@ function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(meteo, showError);
   } else { 
-    apiUrl = "https://www.prevision-meteo.ch/services/json/lille"
+    meteo()
+  }
 }
-}
-
 
 function showError(error) {
-  switch(error.code) {
-    case error.PERMISSION_DENIED:
-        apiUrl = "https://www.prevision-meteo.ch/services/json/lille"
-        break;
-    case error.POSITION_UNAVAILABLE:
-        apiUrl = "https://www.prevision-meteo.ch/services/json/lille"
-        break;
-    case error.TIMEOUT:
-        apiUrl = "https://www.prevision-meteo.ch/services/json/lille"
-        break;
-    case error.UNKNOWN_ERROR:
-        apiUrl = "https://www.prevision-meteo.ch/services/json/lille"
-        break;
-  }
+  console.error(error)
+  meteo()
 }
 
 function meteo(position){
     
-    lng = position.coords.longitude;
-    lat = position.coords.latitude
+    if(position == undefined){
+      lat = 50.6333
+      lng = 3.0667
+    } else {
+      lng = position.coords.longitude;
+      lat = position.coords.latitude
+    }
 
     url = apiUrl +  "lat=" + lat.toFixed(3) + "lng=" + lng.toFixed(3)
-
     console.log(url)
 
     fetch(url, {method: 'get'}).then(response => response.json()).then(results => {
