@@ -19,12 +19,14 @@ section{
 .textimg{
     border : 2px solid  var(--color-principal);
     width: 30vw;
+    box-shadow: 10px 5px 3px 0px rgba(0,0,0,0.6);
     
 }
 .titreimg{
 
     border : 2px solid  var(--color-secondaire);
     width: 15vw;
+    border-radius: 5px;
 
 }
 
