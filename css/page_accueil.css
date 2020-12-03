@@ -20,7 +20,6 @@ slide{
     width: 600px;
 }
 
-
 .avis{
     padding: 15px;
     font-size: 20px;
@@ -34,4 +33,80 @@ slide{
     display: flex;
     justify-content: space-around;
     margin: 100px 0px;
+}
+
+.meteo{
+    display: flex;
+    align-items: center;
+}
+
+#meteo-img img{
+    width: 300px;
+}
+
+#info-meteo p{
+    color: var(--color-principal);
+}
+
+.date{
+    color: var(--color-back);
+}
+
+.info{
+    display: flex;
+    align-items: center;
+}
+
+.info div{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.twitter{
+    border-right: 1px solid var(--color-back);
+}
+.twitter-icon, .envelope-icon{
+    color: var(--color-principal);    
+    transition: 0.5s;
+}
+
+.twitter-icon:hover, .envelope-icon:hover{
+    color: var(--color-back);
+}
+
+.content-card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    transition: 0.5s;
+    margin: 100px 0;
+}
+
+.card:nth-of-type(2n+1) {
+    border: 5px solid var(--color-principal);
+    background-color: var(--color-principal);
+}
+
+.card:nth-of-type(2n+0) {
+    border: 5px solid var(--color-secondaire);
+    background-color: var(--color-secondaire);
+}
+
+.card img{
+    width: 500px;
+    height: 300px;
+}
+
+.card figcaption{
+    background-color: var(--color-de-base);
+    text-align: center;
+    padding: 10px;
+}
+
+.card:hover{
+ border: 5px solid  var(--color-back);
 }

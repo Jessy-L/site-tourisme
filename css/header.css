@@ -12,8 +12,7 @@ header a:hover{
     text-decoration: underline;
 }
 
-.logo{
-    background-color: var(--color-back);
+.logo img{
     width: 200px;
     height: 100px;
 }

@@ -28,10 +28,9 @@ footer{
     text-decoration: underline;
 }
 
-.logo_footer{
-    width: 250px;
+.logo_footer img{
+    width: 450px;
     height: 250px;
-    background-color: var(--color-de-base);
 }
 
 .horaire{
