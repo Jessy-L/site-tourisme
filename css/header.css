@@ -1,0 +1,52 @@
+header{
+    text-align: center;
+    background-color: var(--color-principal);
+    padding: 5px 10px;
+}
+
+header a {
+    color: var(--color-principal );
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+}
+
+.logo{
+    background-color: var(--color-back);
+    width: 200px;
+    height: 100px;
+}
+
+.fond-blanc{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 1px;
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+nav ul li:hover{
+    background-color: white;
+    color: #00ACE5;
+    text-decoration: none;
+}
+
+nav ul li a{
+    color: var(--color-back);
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+}

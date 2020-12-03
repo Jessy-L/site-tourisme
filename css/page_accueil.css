@@ -1,0 +1,37 @@
+slide{
+    width: 30%;
+}
+
+#demo{
+    width: 40%;
+    overflow: hidden;
+}
+
+.slideshow{
+    margin: 100px 0;
+    color: var(--color-de-base);
+    background-color: var(--color-back);
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+}
+
+.texte-slide{
+    width: 600px;
+}
+
+
+.avis{
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--color-de-base);
+    background-color: var(--color-principal);
+    width: 270px;
+}
+
+.content-info{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0px;
+}
