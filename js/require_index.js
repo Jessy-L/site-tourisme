@@ -1,4 +1,4 @@
-fetch("../asset/header_index.html")
+fetch("asset/header_index.html")
 .then(response => {
     return response.text()
 })
@@ -6,7 +6,7 @@ fetch("../asset/header_index.html")
     document.querySelector("header").innerHTML = data;
 });
 
-fetch("../asset/footer_index.html")
+fetch("asset/footer_index.html")
 .then(response => {
     return response.text()
 })
