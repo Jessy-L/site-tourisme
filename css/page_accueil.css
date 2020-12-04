@@ -152,3 +152,11 @@ h2{
 .card:hover{
  border: 5px solid  var(--color-back);
 }
+
+@media screen and (max-width: 500px) {
+
+    .slide{
+        display: none;
+    }
+
+}

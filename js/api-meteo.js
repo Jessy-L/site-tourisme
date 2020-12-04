@@ -59,7 +59,7 @@ function meteo(position){
         meteo_img.appendChild(img)
 
         var p = document.createElement('p')
-        p.innerHTML = results.current_condition.tmp +  "°C " + "</br> <span class=\"date\">" + results.fcst_day_0.day_long + " " + results.fcst_day_0.date + "</span><br>" + ladate.getHours()+":"+ladate.getMinutes()+":"+ladate.getSeconds() 
+        p.innerHTML = results.current_condition.tmp +  "°C " + "</br> <span class=\"date\">" + results.fcst_day_0.day_long + " " + results.fcst_day_0.date + "</span><br>" + ladate.getHours()+":"+ladate.getMinutes() 
         info_meteo.appendChild(p)
 
     }).catch(err => {
