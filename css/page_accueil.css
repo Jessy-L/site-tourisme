@@ -137,6 +137,7 @@ iframe{
 .card{
     transition: 0.5s;
     margin: 100px 0;
+    width: 400px;
 }
 
 .card:nth-of-type(2n+1) {
