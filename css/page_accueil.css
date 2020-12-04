@@ -1,6 +1,6 @@
 .slide{
     width: 45vw;
-
+    height: 25vw;
     overflow: hidden;
 }
 
@@ -8,6 +8,10 @@
     width: 100%;
 }
 
+h2{
+    text-align: center;
+    font-size: 30px;
+}
 
 .slideshow{
     margin: 100px 0;
@@ -68,6 +72,16 @@
     width: 300px;
 }
 
+#loading{
+    transition: 0.7s;
+}
+
+.loading-icon{
+    color: var(--color-principal);
+    padding: 10px;
+    font-size: 100px;
+}
+
 #info-meteo p{
     color: var(--color-principal);
 }
@@ -106,7 +120,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 99vw;
 }
 
 .card{
@@ -137,4 +151,12 @@
 
 .card:hover{
  border: 5px solid  var(--color-back);
+}
+
+@media screen and (max-width: 500px) {
+
+    .slide{
+        display: none;
+    }
+
 }

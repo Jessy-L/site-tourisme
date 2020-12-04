@@ -1,0 +1,12 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+#top_bouton{
+    position: fixed;
+    top: 90%;
+    left: 95%;
+}

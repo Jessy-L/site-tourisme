@@ -15,6 +15,11 @@ var ladate = new Date()
 var meteo_img = document.getElementById('meteo-img')
 var info_meteo = document.getElementById('info-meteo')
 
+var loading = document.getElementById("loading")
+
+var rotation = 0;
+var stock = 0;
+
 var lng = 0;
 var lat = 0;
 
@@ -40,6 +45,8 @@ function meteo(position){
       lng = position.coords.longitude;
       lat = position.coords.latitude
     }
+    meteo_img.innerHTML = ""
+    info_meteo.innerHTML = ""
 
     url = apiUrl +  "lat=" + lat.toFixed(3) + "lng=" + lng.toFixed(3)
     console.log(url)
@@ -52,14 +59,25 @@ function meteo(position){
         meteo_img.appendChild(img)
 
         var p = document.createElement('p')
-        p.innerHTML = results.current_condition.tmp +  "°C " + "</br> <span class=\"date\">" + results.fcst_day_0.day_long + " " + results.fcst_day_0.date + "</span><br>" + ladate.getHours()+":"+ladate.getMinutes()+":"+ladate.getSeconds() 
+        p.innerHTML = results.current_condition.tmp +  "°C " + "</br> <span class=\"date\">" + results.fcst_day_0.day_long + " " + results.fcst_day_0.date + "</span><br>" + ladate.getHours()+":"+ladate.getMinutes() 
         info_meteo.appendChild(p)
 
     }).catch(err => {
         console.error(err)
     })
+    clearInterval(inter)
 }
 
 getLocation()
+
+var inter = setInterval(function(){
+              stock += 10
+              rotation += 360 + stock
+              loading.style.transform = "rotate(" + rotation +"deg)";
+              if(stock > 100){
+                stock = 0
+              }
+              console.log(stock)
+            }, 1000);
 
 // setTimeout(meteo(),30000)
