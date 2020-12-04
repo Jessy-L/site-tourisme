@@ -21,7 +21,8 @@ header a:hover{
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    flex-wrap: wrap;
+    background-color: var(--color-de-base);
 }
 
 nav ul{
@@ -37,8 +38,8 @@ nav ul li{
 }
 
 nav ul li:hover{
-    background-color: white;
-    color: #00ACE5;
+    background-color: var(--color-de-base);
+    color:var(--color-principal);
     text-decoration: none;
 }
 
