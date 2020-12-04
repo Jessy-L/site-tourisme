@@ -34,6 +34,19 @@
     width: 270px;
 }
 
+.pouce{
+    color:var(--color-de-base);
+    font-size: 195px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.pouce:hover{
+    color: var(--color-back);
+    font-size: 195px;
+}
+
+
 .content-info{
     display: flex;
     justify-content: space-around;
