@@ -7,37 +7,47 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
      <link rel="stylesheet" href="../css/page_des_lieux.css">
 </head>
-<body>
+<body class="container-fluid">
     <header>
-        <script src="js/require.js"></script>
+        
     </header>
 
-<section class="text-center text-white">
-   <h1> Titre 1</h1> 
+<section class="text-center text-white row">
+   <h1 class="col-lg-12"> Titre 1</h1> 
     <p> Présentation du site</p>
 </section>
 
-<aside>
+<aside class="row">
 
-    <article class="d-flex flex-wrap justify-content-around text-center">
+    <article class="d-flex flex-wrap justify-content-around text-center col-lg-12">
         
-        <div> <img src="../img/france-nord-pas-de-calais-douai-abbey.png" height="300" width="600" alt="Image du Beffroi de Douai"/>
-       <p class="titreimg"> Beffroi de Douai</p>
-       <p class="textimg">Le beffroi de Douai est le monument symbolique de la ville de Douai dans le département du Nord et la région des Hauts-de-France.
-            Il domine l'hôtel de ville et toute la région environnante</p>
-    </div>
-        
-    <div> <img src="../img/9-9bis.jpg" height="300" width="600" alt="Image 9-9bis de Oignies"/>
-        <p class="titreimg">9-9Bis à Oignies</p>
-        <p class="textimg">Le 9-9bis fait partie des cinq grands sites de la mémoire minière avec le 11/19 à Loos-en-Gohelle,
-             la fosse Delloye à Lewarde, la fosse Wallers à Arenberg et la Cité des Électriciens à Bruay-la-Buissière.<br>
-              Il représente un ensemble minier complet avec la fosse, le terril 110 et la cité-jardin De Clercq. Depuis le 30 juin 2012,
-               il est – avec 352 autres éléments – inscrit sur la Liste du patrimoine mondial de l’UNESCO au titre de “paysage culturel évolutif“.
+    <div class="card-group">
+        <div class="conatainer-fluid card m-5">
+          <img class="card-img-top" src="../img/france-nord-pas-de-calais-douai-abbey.png" height="500" width="400" alt="Image du Beffroi de Douai">
+          <div class="card-body">
+            <p class="titreimg card-text">Beffroi de Douai</p>
+            <p class="textimg card-text">Le beffroi de Douai est le monument symbolique de la ville de Douai dans le département du Nord et la région des Hauts-de-France.
+                 Il domine l'hôtel de ville et toute la région environnante</p>
+           </div>         
 
-        </p>
+        </div>
+
+          
+            <div class="conatainer-fluid card m-5">
+              <img class="card-img-top" src="../img/9-9bis.jpg" height="500" width="400" alt="Image du 9-9Bis de Oignies">
+              <div class="card-body">
+                <p class="titreimg card-text">9-9Bis à Oignies</p>
+                <p class="textimg card-text">Le 9-9bis fait partie des cinq grands sites de la mémoire minière avec le 11/19 à Loos-en-Gohelle,
+                la fosse Delloye à Lewarde, la fosse Wallers à Arenberg et la Cité des Électriciens à Bruay-la-Buissière.<br>
+                Il représente un ensemble minier complet avec la fosse, le terril 110 et la cité-jardin De Clercq. Depuis le 30 juin 2012,
+                il est – avec 352 autres éléments – inscrit sur la Liste du patrimoine mondial de l’UNESCO au titre de “paysage culturel évolutif“.</p>
+              </div>
+            </div>
+
     </div>
+
     </article>
-
+<!-- 
     <article class="d-flex flex-wrap justify-content-around text-center">
         
         <div> <img src="../img/Louvre lens.jpg" height="300" width="600" alt="Image du Louvre Lens a Lens"/>
@@ -69,10 +79,10 @@
             qui a entraîné la construction de 183 piscines de ce type en France à la fin des années 1970 et au début des années 1980.</p>
         </div>
 
-    </article>
+    </article> -->
 
 </aside>
-
+<!-- 
 <aside class="d-flex justify-content-center">
     
     <ul class="texteven">
@@ -84,17 +94,17 @@
     </ul>
 
 
-    
+     
 
-</aside>
+ </aside>  -->
 
 <footer>
-    <script src="js/require.js"></script>
+    
 </footer>
 
 
 
-
+<script src="js/require.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
