@@ -1,0 +1,33 @@
+
+section{
+
+    text-align: center;
+    background-color : var(--color-back);
+}
+
+.textimg{
+    border : 2px solid  var(--color-principal);
+     box-shadow: 10px 5px 3px 0px rgba(0,0,0,0.6);
+    margin : auto;
+    
+}
+.titreimg{
+
+    border : 2px solid  var(--color-secondaire);
+     border-radius: 5px;
+    margin: auto;
+
+}
+
+.texteven{
+
+    border : 2px solid  var(--color-principal);
+    box-shadow: 10px 5px 3px 0px rgba(0,0,0,0.6);
+
+}
+
+article div {
+
+   
+    margin: 10px 0px;
+}
