@@ -1,26 +1,31 @@
-slide{
-    width: 30%;
-}
+.slide{
+    width: 45vw;
 
-#demo{
-    width: 40%;
     overflow: hidden;
 }
+
+.slide img{
+    width: 100%;
+}
+
 
 .slideshow{
     margin: 100px 0;
     color: var(--color-de-base);
     background-color: var(--color-back);
     display: flex;
+    flex-wrap: wrap;
     padding: 50px;
     justify-content: space-around;
 }
 
 .texte-slide{
     width: 600px;
+    padding: 10px;
 }
 
 .avis{
+    margin: 10px;
     padding: 15px;
     font-size: 20px;
     text-align: center;
@@ -32,12 +37,14 @@ slide{
 .content-info{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 100px 0px;
 }
 
 .meteo{
     display: flex;
     align-items: center;
+    margin: 10px
 }
 
 #meteo-img img{
@@ -53,6 +60,7 @@ slide{
 }
 
 .info{
+    margin: 10px;
     display: flex;
     align-items: center;
 }
@@ -79,6 +87,7 @@ slide{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 100vw;
 }
 
 .card{
@@ -97,8 +106,8 @@ slide{
 }
 
 .card img{
-    width: 500px;
-    height: 300px;
+    width: 400px;
+    height: 250px;
 }
 
 .card figcaption{
