@@ -3,10 +3,14 @@ html{
     scroll-behavior: smooth;
 }
 
-
-
 #top_bouton{
     position: fixed;
     top: 90%;
     left: 95%;
+}
+
+@media screen and (max-width: 500px) {
+    #top_bouton{
+        display: none;
+    }
 }
