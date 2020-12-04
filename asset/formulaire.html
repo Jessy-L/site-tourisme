@@ -20,12 +20,20 @@
     <p><strong>Envoyer un message</strong></p>
 </section>
 <fieldset>
+    <form>
     <label for="Nom">Nom</label>
     <input type="text" size="20" minlength="2" maxlength="30">
     <label for="Nom">Prénom</label>
     <input type="text" size="20" minlength="2" maxlength="30">
-    <label for="E-mail">É-mail</label>
-    <input type="email" size="20" minlength="2" maxlength="50">
+    <form>
+        <form>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationServer01">Votre email</label>
+                <input type="email" class="form-control" id="validationServer01" size="20" min value="5"  placeholder="exemple@exemple.fr" required>
+              </div>
+           </div>
+    </form>
     <label for="Ville">Sites concerné<br>
     </label><select required>
         <option>Choix</option>
@@ -38,18 +46,10 @@
     <textarea class="field" placeholder="Message"></textarea>
     <input type="checkbox" required class="checkbox">
     <label for="Conditions Générales">Je souhaite m'inscire a la newsletter<br></label>
-
+    <button type="button" class="btn btn-dark">Dark</button>
 
     
 </fieldset>
-
-
-
-
-<aside></aside>
-
-
-
 
 <footer>
     <script src="js/script.js"></script>

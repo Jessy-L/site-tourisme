@@ -6,3 +6,5 @@
     --color-secondaire: #BF1867;
 
 }
+
+background-color : var (--color-back)
