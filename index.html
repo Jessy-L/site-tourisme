@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/page_accueil.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/top_bouton.css">
+    <link rel="icon" type="image/png" href="img/logo-horizontal.png">
+    <title>Office du tourime de France</title>
 </head>
 
 <body>
 
-    <header>
+    <header id="top">
         <script src="js/require.js"></script>
     </header>
     
@@ -36,17 +38,26 @@
             </div>
 
             <div class="texte-slide">
-                <h2>Titre</h2>
+                <h2>Notre site web</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi eu vitae, amet viverra at semper neque pretium. PjytLorem ipsum dolor sit amet, consectetur adipiscing elit. Mi eu vitae, amet viverra at semper neque pretium. PjytLorem ipsum dolor sit amet, consectetur adipiscing elit. Mi eu vitae, amet viverra at semper neque pretium. PjytLorem ipsum dolor sit amet, consectetur adipiscing elit. Mi eu vitae, amet viverra at semper neque pretium. PjytLorem ipsum dolor sit amet, consectetur adipiscing elit. Mi eu vitae, amet viverra at semper neque pretium. PjytLorem ipsum dolor sit amet, consectetur adipiscing elit. Mi eu vitae, amet viverra at semper neque pretium. PjytLorem ipsum dolor sit amet, consectetur adipiscing elit. Mi eu vitae, amet viverra at semper neque pretium. PjytLorem ipsum dolor sit amet, consectetur adipiscing elit. Mi eu vitae, amet viverra at semper neque pretium. Pjytb</p>
             </div>
         </section>
 
+        <h2>PRÉPAREZ VOTRE SEJOUR</h2>
+
+
         <section class="content-info">
-            <div class="meteo">
+            <div class="meteo" >
 
-                <div id="meteo-img"></div>
+                <div id="meteo-img">
+                    <div id="loading">
+                        <span class="iconify loading-icon" data-inline="false" data-icon="ant-design:loading-3-quarters-outlined"></span>
+                    </div>
+                </div>
 
-                <div id="info-meteo"></div>
+                <div id="info-meteo">
+                    <p>En attente de votre position</p>
+                </div>
 
             </div>
 
@@ -73,6 +84,9 @@
             </div>
         </section>
 
+
+
+        <h2>VOIR LES DIFFÉRENTS LIEUX</h2>
         <section class="content-card">
             <div class="card">
                 <a href="asset/page_des_lieux.html">
@@ -101,6 +115,7 @@
         <script src="js/require.js"></script>
     </footer>
 
+    <script src="js/top_bouton.js"></script>
     <script src="js/like.js"></script>
     <script src="js/api-meteo.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
