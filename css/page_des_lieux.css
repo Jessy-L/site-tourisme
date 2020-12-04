@@ -33,6 +33,7 @@ section{
 .texteven{
 
     border : 2px solid  var(--color-principal);
+    box-shadow: 10px 5px 3px 0px rgba(0,0,0,0.6);
 
 }
 
