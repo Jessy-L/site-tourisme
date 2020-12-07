@@ -7,14 +7,14 @@ section{
 
 .textimg{
     border : 2px solid  var(--color-principal);
-     box-shadow: 10px 5px 3px 0px rgba(0,0,0,0.6);
+    box-shadow: 10px 5px 3px 0px rgba(0,0,0,0.6);
     margin : auto;
     
 }
 .titreimg{
 
     border : 2px solid  var(--color-secondaire);
-     border-radius: 5px;
+    border-radius: 5px;
     margin: auto;
 
 }
@@ -26,8 +26,10 @@ section{
 
 }
 
-article div {
+.card img{
+    height: 50vh ; 
+}
 
-   
+article div {
     margin: 10px 0px;
 }
