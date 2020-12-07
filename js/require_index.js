@@ -13,3 +13,6 @@ fetch("asset/footer_index.html")
 .then(data => {
     document.querySelector("footer").innerHTML = data;
 });
+
+
+
