@@ -50,3 +50,10 @@ nav ul li a{
 nav ul li a:hover{
     text-decoration: none;
 }
+
+@media (max-width:1024px){
+    .fond-blanc{
+        flex-direction: column;
+    }
+
+}
