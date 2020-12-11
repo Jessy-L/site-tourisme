@@ -1,0 +1,169 @@
+.slide{
+    width: 45vw;
+    height: 25vw;
+    overflow: hidden;
+}
+
+.slide img{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.slideshow{
+    color: var(--color-de-base);
+    background-color: var(--color-back);
+    padding: 50px;
+}
+
+.texte-slide{
+    width: 600px;
+    padding: 10px;
+}
+
+.avis{
+    margin: 10px;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--color-de-base);
+    background-color: var(--color-principal);
+    width: 270px;
+}
+
+.pouce{
+    color:var(--color-de-base);
+    font-size: 195px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.pouce:hover{
+    color: var(--color-back);
+    font-size: 195px;
+}
+
+#pouce{
+    transition: 0.8s;
+}
+
+.content-info{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 100px 0px;
+}
+
+.meteo{
+    display: flex;
+    align-items: center;
+    margin: 10px
+}
+
+#meteo-img img{
+    width: 300px;
+}
+
+#loading{
+    transition: 0.7s;
+}
+
+.loading-icon{
+    color: var(--color-principal);
+    padding: 10px;
+    font-size: 100px;
+}
+
+#info-meteo p{
+    color: var(--color-principal);
+}
+
+.date{
+    color: var(--color-back);
+}
+
+.info{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.info div{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.twitter{
+    border-right: 1px solid var(--color-back);
+}
+
+.twitter-icon, .envelope-icon{
+    color: var(--color-principal);    
+
+    transition: 0.5s;
+}
+
+.twitter-icon:hover, .envelope-icon:hover{
+    color: var(--color-back);
+}
+
+
+.map {
+    border: 2px solid var(--color-principal);
+    width: 400px;
+    height: 400px;
+    margin: 15px;
+}
+
+iframe{
+ width: 100%;
+ height: 100%;
+}
+
+.card{
+    transition: 0.5s;
+    margin: 100px 0;
+    width: 500px;
+}
+
+.card:nth-of-type(2n+1) {
+    border: 5px solid var(--color-principal);
+    background-color: var(--color-principal);
+}
+
+.card:nth-of-type(2n+0) {
+    border: 5px solid var(--color-secondaire);
+    background-color: var(--color-secondaire);
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+}
+
+.card figcaption{
+    background-color: var(--color-de-base);
+    text-align: center;
+    padding: 10px;
+}
+
+.card:hover{
+ border: 5px solid  var(--color-back);
+}
+
+@media screen and (max-width: 500px) {
+
+    .slide{
+        display: none;
+    }
+
+    .content-card{
+        width: 100%;
+    }
+
+}
