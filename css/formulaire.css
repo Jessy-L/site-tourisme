@@ -7,8 +7,6 @@
 
 }
 
-background-color:var(--color-back);
-
 h1
 {
    color:var(--color-secondaire);
@@ -28,6 +26,8 @@ form
 {
     margin: auto;
     width: 70%;
+    background-color:var(--color-back);
+    padding: 50px;
 }
 
 fieldset 
@@ -47,8 +47,9 @@ input , select {
     width: 100%;
 }
 
-.radio , .checkbox {
+.radio ,.checkbox {
     width: 5%;
+    
 }
 
 caption {

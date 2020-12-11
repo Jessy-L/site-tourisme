@@ -15,14 +15,15 @@
     <h1>Nous contacter</h1>
     <p><strong>Ce formulaire ci-dessous permet de contacter l'office du tourisme.</strong></p>
 </section>
-<section class = "text-center">
+<section class="text-center">
       <h3><strong>Envoyer un message</strong></h3>
 </section>
-<form method= "post">
+<form method="poste" action="message.html">
+
     <fieldset>
         <label for="Nom">Nom</label>
     <input type="text" size="20" minlength="2" maxlength="30" required>
-    <label for="Nom">Prénom</label>
+    <label for="Prenom">Prénom</label>
     <input type="text" size="20" minlength="2" maxlength="30" required>
             <div class="form-row">
               <div class="col-md-6 mb-3">
@@ -31,22 +32,25 @@
               </div>
            </div>
            <label for="Ville">Sites concerné<br>
-           </label><select required>
-               <option>Choix</option>
-               <option>Beffroi de Douai</option>
-               <option>9-9Bis de Oignis</option>
-               <option>Le Louvre A Lens</option>
-               <option>Parc des îles a Henin Beaumont</option>
-               <option>Palais des beaux-arts de Lille</option></BR>
+           </label>
+           <select name="site" required>
+               <option value="">Choix</option>
+               <option value="1">Beffroi de Douai</option>
+               <option value="2">9-9Bis de Oignis</option>
+               <option value="3">Le Louvre A Lens</option>
+               <option value="4">Parc des îles a Henin Beaumont</option>
+               <option value="5">Palais des beaux-arts de Lille</option>
             </select>
             <div>
-                <textarea class="field" placeholder="Message"></textarea>
+                <textarea class="field" placeholder="Message" required></textarea>
             </div>
             <input type="checkbox" required class="checkbox">
             <label for="Conditions Générales">Je souhaite m'inscire a la newsletter<br></label>
             <input type="submit" value="Envoyer">
         </fieldset>
-    </form>
+<section>
+</section>        
+</form>
     
 
 <footer>
