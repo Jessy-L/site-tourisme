@@ -1,0 +1,57 @@
+.avis{
+    margin: 10px;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--color-de-base);
+    background-color: var(--color-principal);
+    width: 270px;
+}
+
+.pouce{
+    color:var(--color-de-base);
+    font-size: 195px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.pouce:hover{
+    color: var(--color-back);
+    font-size: 195px;
+}
+
+#pouce{
+    transition: 0.8s;
+}
+
+.card{
+    transition: 0.5s;
+    margin: 100px 0;
+    width: 500px;
+}
+
+.card:nth-of-type(2n+1) {
+    border: 5px solid var(--color-principal);
+    background-color: var(--color-principal);
+}
+
+.card:nth-of-type(2n+0) {
+    border: 5px solid var(--color-secondaire);
+    background-color: var(--color-secondaire);
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+}
+
+.card figcaption{
+    background-color: var(--color-de-base);
+    text-align: center;
+    padding: 10px;
+}
+
+.card:hover{
+ border: 5px solid  var(--color-back);
+}
